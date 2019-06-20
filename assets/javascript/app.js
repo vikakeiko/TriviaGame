@@ -2,9 +2,9 @@
 var questions = [
     { q: "96 % 3", o: ["12", "3", "32", "9"], a: "32" },
     { q: "57 + 18", o: ["76", "86", "65", "75"], a: "75" },
-    { q: "What are the electric appliances that are on both side of you?", o: ["DVD player, Air Conditioner, Television, Amplifier,"], a: "Television" },
-    { q: "What is the currency in Japan?", o: ["DEN, NED, YEN, EYN"], a: "YEN" },
-    { q: "Silver & Gold, Window & Target, Key & Oyster, Rainbow & (????)", o: ["North, West, East, South"], a: "West" },
+    { q: "What are the electric appliances that are on both side of you?", o: ["DVD player", "Air Conditioner", "Television", "Amplifier"], a: "Television" },
+    { q: "What is the currency in Japan?", o: ["DEN", "NED", "YEN", "EYN"], a: "YEN" },
+    { q: "Silver & Gold, Window & Target, Key & Oyster, Rainbow & (????)", o: ["North", "West", "East", "South"]x , a: "West" },
 ];
 var rightAnswers = 0;
 var wrongAnswer =0;
@@ -27,8 +27,7 @@ var intervalId;
 $('#start').on("click", run);
 function run() {
     startTimer();
-   addQuestions();
-    // intervalId = setInterval(decrement, 1000);
+    
 }
 
 function decrement() {
@@ -52,7 +51,7 @@ var addQuestions = function () {
         for (let j = 0; j < questions[i].o.length; j++) {
             console.log(questions[i].o[j]);
             // apply the options to display 
-            $("#game-page").append('<label><input class="question" type="radio" name="question-${i}" value="">' + questions[i].o[j] +'</label>');
+            $("#game-page").append(`<label><input class="question" type="radio" name="question-${i}" value="">` + questions[i].o[j] +'</label>');
         }
     }
 }
