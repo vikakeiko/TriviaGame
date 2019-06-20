@@ -10,8 +10,8 @@
 
 <body>
     <div id='start-page' style="background-color:yellow;">
-        <h1>Trivia Game</h1>
-        <div id="content">
+        <h1>Totally Trivial Trivia!</h1>
+        <div id="start-page">
             <button id="start">
                 <h2>Start</h2>
             </button>
@@ -19,8 +19,16 @@
 
     </div>
     <div id='game-page' style='display:none'>
-        <h1>Totally Trivival Trivia!</h1>
-        <div>Time Remaining: <span id="timeCounting"></span> </div>
+        <div>Time Remaining: <span id="show-number"></span> </div>
+        <button id="done">
+            <h2>Done</h2>
+        </button>
+    </div>
+
+    <div id='result-page' style='display:none'>
+         <div>Correct Answers: <span id="correct"></span></div>
+         <div>Incorrect Answers: <span id="incorrect"></span></div>
+         <div>Unanswered: <span id="unanswered"></span></div>
     </div>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="../TriviaGame/assets/javascript/app.js"></script>
