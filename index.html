@@ -6,10 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Trivia Game</title>
+    <link rel="stylesheet" href="../TriviaGame/assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300i,400,700,700i" rel="stylesheet">
 </head>
 
 <body>
-    <div id='start-page' style="background-color:yellow;">
+    <div id='start-page'>
         <h1>Totally Trivial Trivia!</h1>
         <div id="start-page">
             <button id="start">
@@ -26,9 +28,9 @@
     </div>
 
     <div id='result-page' style='display:none'>
-         <div>Correct Answers: <span id="correct"></span></div>
-         <div>Incorrect Answers: <span id="incorrect"></span></div>
-         <div>Unanswered: <span id="unanswered"></span></div>
+         <div>Correct Answers: <span id="correct">0</span></div>
+         <div>Incorrect Answers: <span id="incorrect">0</span></div>
+         <div>Unanswered: <span id="unanswered">0</span></div>
     </div>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="../TriviaGame/assets/javascript/app.js"></script>
