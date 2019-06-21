@@ -3,7 +3,7 @@ body {
 }
 
 #start-page {
-    background: url(..//images/map.jpg);
+    background: url(../images/map.jpg);
     background-size: cover;
     background-repeat: space;  
     font-size: 3.5em;
